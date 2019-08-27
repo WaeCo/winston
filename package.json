@@ -64,7 +64,7 @@
     "test": "nyc --reporter=text --reporter lcov npm run test:mocha",
     "test:mocha": "mocha test/*.test.js test/**/*.test.js --exit",
     "build": "./node_modules/.bin/rimraf dist && babel lib -d dist",
-    "prepack": "npm install --only=dev && npm run build",
+    "prepack": "npm install && npm run build",
     "prepublishOnly": "npm run build"
   },
   "engines": {
